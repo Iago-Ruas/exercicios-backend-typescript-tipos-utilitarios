@@ -12,6 +12,6 @@ const cadastrarUsuário = (info: Usuario): Usuario => {
 
 type UsuarioSemRg = Omit<Usuario, "rg">;
 
-const futuraImplementação = (info: UsuarioSemRg) => {
+const futuraImplementação = (info: Required<UsuarioSemRg>) => {
     return info;
 };
