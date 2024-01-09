@@ -31,7 +31,7 @@ type Endereco = {
 type CarrinhoComEndereco = {
     carrinho: {
         [key in keyof Carrinho]: key extends "tipoTransacao"
-            ? Uppercase<Carrinho[key]>
+            ? Lowercase<Carrinho[key]>
             : Carrinho[key];
     };
     endereco: Endereco;
